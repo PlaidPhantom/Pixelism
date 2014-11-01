@@ -1,6 +1,6 @@
 PixelismSettings = {
     // general app info
-    appVersion: "2.0.0",
+    appVersion: "2.0.1",
     fullVersion: true,  // shouldn't do anything anymore
     fullVersionLink: 'http://www.phantomhat.com/pixelism/',  // referenced in unused nag screen. meh.
     pixelismUrl: 'http://www.phantomhat.com/pixelism/',
