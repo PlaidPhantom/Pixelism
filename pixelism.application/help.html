@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pixelism Help</title>
+    <script src="file:///C:/Program%20Files%20(x86)/HP%20webOS/SDK/share/framework/enyo/1.0/framework/enyo.js" type="text/javascript"></script>
+    <!-- <script src="../../enyo/1.0/framework/enyo.js" type="text/javascript"></script> -->
+  </head>
+  <body>
+    <div id="help">
+      <p>Pixelism is an art application that allows you to draw on pictures with colorful tiled shapes.  In this help, these shapes will be referred to as&ldquo;Pixels&rdquo;.</p>
+      
+      <h3>App Layout and Controls</h3>
+      
+      <figure style="float: right">
+        <img src="images/help/pixelism.png" alt="A screenshot of Pixelism" />
+        <figcaption>The Pixelism main window.</figcaption>
+      </figure>
+      
+      <p>The Pixelism main window is comprised of a canvas that can be scrolled or drawn on and a toolbar that holds all of the app's tools and functions.</p>
+      <dl>
+        <dt>1. The Canvas</dt>
+        <dd>The canvas is the space on which the picture is drawn, and can be thought of as a grid of Pixels. When a draw tool or the erase tool is selected, then that operation is performed on any Pixels touched.</dd>
+        <dt>2. The App Menu</dt>
+        <dd>The app menu gives options to view this help screen or an "About" popup with information about the app and Phantom Hat.</dd>
+        <dt>3. The Toolbox</dt>
+        <dd>The Toolbox contains the tools you have to work with the displayed canvas and the Pixels within it.
+          <dl>
+            <dt>The Move Tool</dt>
+            <dd>When the Move Tool is selected (has blue background), then the Canvas can be scrolled, allowing you to move around your image if the Canvas is larger than the displayable area.</dd>
+            <dt>The Erase Tool</dt>
+            <dd>The Erase Tool resets Pixels to their default transparent state, erasing anything that had been drawn in them and allowing the background image to show through.</dd>
+            <dt>The Brushes</dt>
+            <dd>The Brushes are what you use to actually draw on the Canvas.  When a Brush is selected, tapping on the Canvas will draw a Pixel on the Canvas with the current brush settings.  Press and hold on the tool to open a popup window to change the Brush's shape, rotation, and colors (see The Color Picker below).</dd>
+          </dl>
+        </dd>
+        <dt style="clear: both;">4. The Resize Button
+          <figure style="float: right;">
+            <img src="images/help/resize.png" />
+            <figcaption>Resize Dialog</figcaption>
+          </figure>
+        </dt>
+        <dd>The Resize Button displays the current size of the Canvas in Pixels.  Tapping on the button brings up the Resize Dialog, where you can change the size of the Canvas.  Any background image will be stretched to fit the new size.</dd>
+        <dt style="clear: both;">5. The Fill/Clear Button
+          <figure style="float: right;">
+            <img src="images/help/fill.png" />
+            <figcaption>Fill/Clear Dialog</figcaption>
+          </figure>
+        </dt>
+        <dd>The Fill/Clear button gives you options for automatically using the Eraser or a Brush on the entire image.</dd>
+        <dt style="clear: both;">6. The Background Button
+          <figure style="float: right;">
+            <img src="images/help/background.png" />
+            <figcaption>Background Dialog</figcaption>
+          </figure>
+        </dt>
+        <dd>The Background Dialog gives you options to change the background of the drawing canvas, i.e. what you are &ldquo;drawing on&rdquo;.  You can have a transparent background, a black background, or a background made from an image on your TouchPad.  See &ldquo;Loading Images&rdquo; below for information on loading images into Pixelism.</dd>
+        <dt style="clear: both;">7. The Save Button
+          <figure style="float: right;">
+            <img src="images/help/save.png" />
+            <figcaption>The Save Dialog</figcaption>
+          </figure>
+        </dt>
+        <dd>The Save Button lets you save your creations to your TouchPad's internal storage so that you can view and use the image in any other app. Pressing the button will cause the Save Dialog to appear.  Enter a name for the image, and the Canvas contents will be saved to an image file.</dd>
+      </dl>
+      
+      <h3 style="clear: both;">The Color Picker</h3>
+      
+      <figure style="float: right;">
+        <img src="images/help/colorpicker.png" />
+        <figcaption>The Color Picker</figcaption>
+      </figure>
+      
+      <p>The Color Picker appears when you hold down one of the Brushes for more than one second.  At the top left is a sample of the resulting brush.  At the top right are selectors for the shape to be drawn along with a direction to rotate the shape.</p>
+      <p>The middle of the dialog contains selectors for the Foreground and Background colors.  The Foreground color is the color that replaces white in the shapes shown in the Shape Selector.  The Background Color replaces black in the shape.  Each color selector has sliders for the amount of Red, Green, and Blue in the color.  The sliders will change color to demonstrate how they will affect the resulting color.  Below the color sliders is an &ldquo;Alpha Transparency&rdquo; slider, which will affect how transparent the resulting color is. Below the sliders is a collection of color presets for commonly used colors.</p>
+        
+      <h3 style="clear: both;">Loading Images</h3>
+      
+      <figure style="float: right;">
+        <img src="images/help/filepicker.png" />
+        <figcaption>The File Picker</figcaption>
+      </figure>
+      <p>When you choose &ldquo;Load Image&rdquo; from the Background menu, a file selector will appear.  Use the listing to browse to the image file you want to load into Pixelism.</p>
+      
+      <figure style="float: left;">
+        <img src="images/help/imagecrop.png" />
+        <figcaption>The Crop Image dialog</figcaption>
+      </figure>
+      <p>Once you have selected the image file to load, the Crop Image dialog will appear.  Using this, you can select the region of the image to load as well as the number of Pixels you want the resulting canvas to have.  To select a region of the image, drag the selection (the gray boxes) where you want them to be an use a &ldquo;pinch&rdquo; motion to resize the selection.  If your selection is off of the image's area, the resulting area on the drawing canvas will be transparent.</p>
+      
+      <p style="padding-top: 3em; clear: both;">We hope you enjoy Pixelism.  If you make something awesome, need help, or have a recommendation for us, let us know!  We can be found on Twitter as @PixelismApp.  You can go to the Pixelism website or the Phantom Hat home page using the buttons below.</p>
+    </div>
+    
+    <script type="text/javascript">
+      new Pixelism.Help().renderInto(document.body);
+    </script>
+  </body>
+</html>

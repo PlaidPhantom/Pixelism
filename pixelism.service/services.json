@@ -1,0 +1,19 @@
+{
+	"id": "com.phantomhat.pixelism.service",
+	"description": "Pixelism File IO Service",
+	"services": [ {
+			"name": "com.phantomhat.pixelism.service",
+			"description": "FileIO Service",
+			"commands": [ {
+					"name": "writefile", 
+					"assistant": "WriteFileAssistant",
+					"public": true
+				}, {
+                    "name": "fileexists",
+                    "assistant": "FileExistsAssistant",
+                    "public": true
+                }
+			]
+		}
+	]
+}
