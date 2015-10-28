@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pixelism - A pixel drawing app for WebOS</title>
+    <link id="skin" rel="stylesheet" href="v2skin/style.css" type="text/css" />
+
+    <link rel="stylesheet" href="lightbox/css/lightbox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="lightbox/js/prototype.js"></script>
+    <script type="text/javascript" src="lightbox/js/scriptaculous.js@load=effects,builder"></script>
+    <script type="text/javascript" src="lightbox/js/lightbox.js"></script>
+
+    <style type="text/css">
+      #skinselectbox {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        border: 1px solid #7f7f7f;
+      }
+    </style>
+    <script type="text/javascript">
+        function switchSkin() {
+            document.getElementById('skin').href = document.getElementById('skinselect').value + '/style.css';
+        }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <a href="index.html"><img src="v2skin/logo-small.png" alt="Pixelism" title="Pixelism" /></a>
+        <p>
+            <a href="https://github.com/PlaidPhantom/Pixelism">Pixelism on Github</a>
+            <!-- a href="http://developer.palm.com/appredirect/?packageid=com.phantomhat.pixelism">Pixelism in the App Catalog</a> |
+            <a href="http://developer.palm.com/appredirect/?packageid=com.phantomhat.pixelismfree">Pixelism Free in the App Catalog</a -->
+        </p>
+      </header>
+
+      <div id="pagebody">
+        <div id="sidebar">
+          <nav>
+            <a href="index.html"><img src="v2skin/home.png" alt="Home" title="Home" /></a>
+            <a href="about.html"><img src="v2skin/about.png" alt="About Pixelism" title="About Pixelism" /></a>
+            <a href="gallery.html"><img src="v2skin/gallery.png" alt="Gallery" title="Gallery" /></a>
+            <a href="userguide.html"><img src="v2skin/userguide.png" alt="User Guide" title="User Guide" /></a>
+            <a href="support.html"><img src="v2skin/support.png" alt="Support" title="Support" /></a>
+          </nav>
+
+          <div id="hatbox">
+              <!--a href="../index.html" -->
+                <img src="images/phantomhat.png" alt="visit the Phantom Hat home page" title="Phantom Hat" />
+              <!--/a-->
+            <p>Pixelism is a Phantom Hat creation.</p>
+          </div>
+        </div>
+
+        <div id="content">
+<div class="contentblock">
+  <p>Pixelism is an app made specifically for WebOS 3.0 that enables you to create images via multi-shaped and multicolored &ldquo;pixels&rdquo;.  With it, you can create incredible works of pixelated art, save them as image files, and even load images from other apps into Pixelism to pixelize them!</p>
+
+  <p>To get an idea of what is possible with Pixelism, check out our <a href="gallery.html">Gallery</a>!</p>
+
+  <p>Check out these screenshots of Pixelism below to get a feel for the app, or check out the free version in the WebOS app catalog.</p>
+
+  <a href="images/screenshots/pixelism.png" rel="lightbox[screenshots]" title="Pixelism itself">
+    <img class="thumbnail" src="images/screenshots/pixelism.png" />
+  </a>
+
+  <a href="images/screenshots/colorpicker.png" rel="lightbox[screenshots]" title="The Color Picker dialog">
+    <img class="thumbnail" src="images/screenshots/colorpicker.png" />
+  </a>
+
+  <a href="images/screenshots/imagecropper.png" rel="lightbox[screenshots]" title="The Image Cropper dialog">
+    <img class="thumbnail" src="images/screenshots/imagecropper.png" />
+  </a>
+
+  <a href="images/screenshots/masterpiece.png" rel="lightbox[screenshots]" title="A masterpiece!">
+    <img class="thumbnail" src="images/screenshots/masterpiece.png" />
+  </a>
+
+  <a href="images/screenshots/imageediting.png" rel="lightbox[screenshots]" title="She's a star!">
+    <img class="thumbnail" src="images/screenshots/imageediting.png" />
+  </a>
+</div>
+
+        </div>
+        <div id="skinselectbox">
+          <span>Change skin:</span>
+          <select id="skinselect" onchange="switchSkin();">
+            <option value="v2skin" selected="selected">2.0 skin</option>
+            <option value="v1skin" >1.0 skin</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+body {
+    background-image: url('cloudtiles.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12pt;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.page {
+    background-image: url('background.png');
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    background-attachment: fixed;
+}
+
+p {
+    margin: 0px;
+    padding: 0 0 1em 0;
+}
+
+a {
+    color: #5e6d99;
+}
+
+a:link {
+    color: #5e6d99;
+}
+
+a:visited {
+    color: #30384f;
+}
+
+header {
+    display: block;
+    padding: 16px 0px 32px 0px;
+    width: 800px;
+    margin: 0px auto 0px auto;
+    background-image: url('dot.png');
+    background-repeat: repeat-x;
+    background-position: bottom left;
+}
+
+header p {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
+header img {
+    display: block;
+    margin: 0px auto 0px auto;
+    border: 1px solid white;
+    padding: 0;
+}
+
+#pagebody {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+#sidebar {
+    display: table-cell;
+    padding: 16px 16px 16px 16px;
+    width: 240px;
+}
+
+nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav>a {
+    display: block;
+    margin-bottom: 16px;
+    padding: 0;
+    width: 100%;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+nav>a>img {
+    margin: 0;
+    padding: 0;
+}
+
+#hatbox {
+    border: 1px solid white;
+    padding: .5em;
+    margin: 1em auto 1em auto;
+    text-align: center;
+    width: 100px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+#content {
+    display: table-cell;
+    vertical-align: top;
+    padding: 16px 16px 16px 32px;
+    width: 480px;
+    background-image: url('dot.png');
+    background-repeat: repeat-y;
+    background-position: top left;
+}
+
+article {
+    display: block;
+    margin: 0 0 16px 0;
+    padding: 7px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+h1 {
+    font-size: 2em;
+    padding: .25em 0 0 0;
+    margin: 0px;
+    color: #30384f;
+}
+
+time {
+    display: block;
+    font-size: .75em;
+    padding: .125em 0 .5em 0;
+    color: #5e6d99;
+}
+
+#content img {
+    max-width: 440px;
+}
+
+/* about, gallery */
+
+#content img.thumbnail {
+    max-width: 200px;
+    padding: 5px;
+}
+
+/* help page */
+
+dt {
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+figure {
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+}
+
+figcaption {
+    font-size: small;
+    font-style: italic;
+    font-weight: normal;
+    display: block;
+}
+
+.contentblock {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 7px;
+}
+
+/* support page */
+
+.formrow {
+    display: table-row;
+}
+
+.formcell {
+    display: table-cell;
+    padding: .25em;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+input[type="text"], input[type="email"] {
+    width: 350px;
+}
+
+textarea {
+    width: 350px;
+    height: 100px;
+    resize: both;
+}

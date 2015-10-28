@@ -1,0 +1,154 @@
+body {
+    background-color: black;
+    background-image: url('background.png');
+    background-repeat: repeat-x;
+    margin: 16px;
+    padding: 0px;
+    font-size: 12pt;
+    color: white;
+    font-family: sans-serif;
+}
+
+a {
+    color: #ff0;
+}
+
+a:link {
+    color: #ff0;
+}
+
+a:visited {
+    color: #cc0;
+}
+
+header {
+    padding: 20px 20px 15px 20px;
+    margin: 0px;
+    background-color: black;
+}
+
+header p {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
+header img {
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
+#pagebody {
+    display: table;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+#sidebar {
+    display: table-cell;
+    padding: 0px 16px 0px 16px;
+    width: 240px;
+}
+
+nav {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav>a {
+    display: block;
+    margin-bottom: 16px;
+    color: white;
+    background-color: black;
+}
+
+nav>a>img {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+#hatbox {
+    border: 1px solid white;
+    padding: .5em;
+    margin: 1em auto 1em auto;
+    text-align: center;
+    width: 100px;
+}
+
+#content {
+    display: table-cell;
+    vertical-align: top;
+    background-color: black;
+    margin: 16px;
+    padding: 16px;
+    width: 498px;
+}
+
+article {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #00ff00;
+    padding: .5em 0em .5em 0em;
+    margin: 0px;
+}
+
+time {
+    font-size: .75em;
+    color: #ff7f00;
+}
+
+/* about, gallery */
+
+img.thumbnail {
+    max-width: 200px;
+    padding: 5px;
+}
+
+/* help page */
+
+dt {
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+figure {
+    padding: 10px 10px 10px 10px;
+}
+
+figcaption {
+    font-size: small;
+    font-style: italic;
+    font-weight: normal;
+    display: block;
+}
+
+
+/* support page */
+
+.formrow {
+    display: table-row;
+}
+
+.formcell {
+    display: table-cell;
+    padding: .25em;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+input[type="text"], input[type="email"] {
+    width: 350px;
+}
+
+textarea {
+    width: 350px;
+    height: 100px;
+    resize: both;
+}

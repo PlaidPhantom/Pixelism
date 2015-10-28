@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pixelism - A pixel drawing app for WebOS</title>
+    <link rel="stylesheet" href="v2skin/style.css" type="text/css" />
+    
+    <link rel="stylesheet" href="lightbox/css/lightbox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="lightbox/js/prototype.js"></script>
+    <script type="text/javascript" src="lightbox/js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="lightbox/js/lightbox.js"></script>
+    
+    <style type="text/css">
+      #skinselectbox {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        border: 1px solid #7f7f7f;
+      }
+    </style>
+    <script type="text/javascript">
+        function switchSkin() {
+            location.replace(location.protocol + '//' + location.host + location.pathname + '?skin=' + document.getElementById('skinselect').value);
+        }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <a href="index.php"><img src="v2skin/logo-small.png" alt="Pixelism" title="Pixelism" /></a>
+        <p>
+          <a href="http://developer.palm.com/appredirect/?packageid=com.phantomhat.pixelism">Pixelism in the App Catalog</a> |
+          <a href="http://developer.palm.com/appredirect/?packageid=com.phantomhat.pixelismfree">Pixelism Free in the App Catalog</a>
+        </p>
+      </header>
+      
+      <div id="pagebody">
+        <div id="sidebar">
+          <nav>
+            <a href="index.php"><img src="v2skin/home.png" alt="Home" title="Home" /></a>
+            <a href="about.php"><img src="v2skin/about.png" alt="About Pixelism" title="About Pixelism" /></a>
+            <a href="gallery.php"><img src="v2skin/gallery.png" alt="Gallery" title="Gallery" /></a>
+            <a href="userguide.php"><img src="v2skin/userguide.png" alt="User Guide" title="User Guide" /></a>
+            <a href="support.php"><img src="v2skin/support.png" alt="Support" title="Support" /></a>
+          </nav>
+          
+          <div id="hatbox">
+            <a href="http://www.phantomhat.com/">
+              <img src="images/phantomhat.png" alt="visit the Phantom Hat home page" title="Phantom Hat" />
+            </a>
+            <p>Pixelism is a Phantom Hat creation.</p>
+          </div>
+        </div>
+        
+        <div id="content">
+
+<div class="contentblock">
+  <p>If you have any problems or suggestions, feel free to contact us using the form below, or send us an email at <a href="mailto:support@phantomhat.com">support@phantomhat.com</a>.</p>
+
+
+  <form method="post" action="?action=send">
+    <fieldset>
+      <legend>Contact Us</legend>
+      
+      <div class="formrow">
+        <label class="formcell" for="email">Your Email:</label>
+        <span class="formcell">
+          <input type="email" id="email" name="email" />
+        </span>
+      </div>
+      
+      <div class="formrow">
+        <label class="formcell" for="subject">Subject:</label>
+        <span class="formcell">
+          <input type="text" id="subject" name="subject" value="Question about Pixelism" />
+        </span>
+      </div>
+      
+      <div class="formrow">
+        <label class="formcell" for="message">Message:</label>
+        <span class="formcell">
+          <textarea id="message" name="message" placeholder="Enter your message or question here."></textarea>
+        </span>
+      </div>
+      
+      <div class="formrow">
+        <label class="formcell" for="submit"><!-- cell layout filler --></label>
+        <span class="formcell">
+          <input type="hidden" name="submitted" value="yes" />
+          <input type="submit" value="Send Message" />
+        </span>
+      </div>
+    </fieldset>
+  </form>
+</div>
+        </div>
+        <div id="skinselectbox">
+          <span>Change skin:</span>
+          <select id="skinselect" onchange="switchSkin();">
+            <option value="v2skin" selected="selected">2.0 skin</option>
+            <option value="v1skin" >1.0 skin</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

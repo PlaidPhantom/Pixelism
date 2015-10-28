@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pixelism - A pixel drawing app for WebOS</title>
+    <link id="skin" rel="stylesheet" href="v2skin/style.css" type="text/css" />
+
+    <link rel="stylesheet" href="lightbox/css/lightbox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="lightbox/js/prototype.js"></script>
+    <script type="text/javascript" src="lightbox/js/scriptaculous.js@load=effects,builder"></script>
+    <script type="text/javascript" src="lightbox/js/lightbox.js"></script>
+
+    <style type="text/css">
+      #skinselectbox {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        border: 1px solid #7f7f7f;
+      }
+    </style>
+    <script type="text/javascript">
+        function switchSkin() {
+            document.getElementById('skin').href = document.getElementById('skinselect').value + '/style.css';
+        }
+    </script>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <a href="index.html"><img src="v2skin/logo-small.png" alt="Pixelism" title="Pixelism" /></a>
+        <p>
+          <a href="https://github.com/PlaidPhantom/Pixelism">Pixelism on Github</a>
+          <!-- a href="http://developer.palm.com/appredirect/?packageid=com.phantomhat.pixelism">Pixelism in the App Catalog</a> |
+          <a href="http://developer.palm.com/appredirect/?packageid=com.phantomhat.pixelismfree">Pixelism Free in the App Catalog</a -->
+        </p>
+      </header>
+
+      <div id="pagebody">
+        <div id="sidebar">
+          <nav>
+            <a href="index.html"><img src="v2skin/home.png" alt="Home" title="Home" /></a>
+            <a href="about.html"><img src="v2skin/about.png" alt="About Pixelism" title="About Pixelism" /></a>
+            <a href="gallery.html"><img src="v2skin/gallery.png" alt="Gallery" title="Gallery" /></a>
+            <a href="userguide.html"><img src="v2skin/userguide.png" alt="User Guide" title="User Guide" /></a>
+            <a href="support.html"><img src="v2skin/support.png" alt="Support" title="Support" /></a>
+          </nav>
+
+          <div id="hatbox">
+            <!--a href="../index.html" -->
+              <img src="images/phantomhat.png" alt="visit the Phantom Hat home page" title="Phantom Hat" />
+            <!--/a-->
+            <p>Pixelism is a Phantom Hat creation.</p>
+          </div>
+        </div>
+
+        <div id="content">
+        <article>
+          <h1>Free Pixelism!</h1>
+          <time datetime="2012-05-07 12:00:00" pubdate="pubdate">May 07, 2012 12:00am</time>
+
+          <p>We've teamed up with the crew at <a href="http://www.webosnation.com/">webOS Nation</a> to give away free copies of Pixelism.  We're really excited about the chance to do this; thanks to Derek and the entire webOS Nation team!  They do great work coordinating the webOS community.</p>
+
+          <p>Now, that said, <a
+href="http://www.webosnation.com/app-giveaway-50-copies-pixelism">go
+forth and
+win</a>!</p>
+        </article>
+
+<!--
+        <article>
+          <h1>Just a Little Longer</h1>
+          <time datetime="2012-03-16 02:04:00" pubdate="pubdate">March 16, 2012 02:04am</time>
+
+          <p>We've finished Pixelism 2.0, and with it comes a new website!  We've submitted to the HP App Catalog, so hopefully it will be available soon!  We are really excited about this update as it brings:</p>
+          <ul>
+            <li>The ability to crop and scale images loaded into the app</li>
+            <li>An option to rotate the pixel shapes in any direction</li>
+            <li>Background colors for brushes</li>
+            <li>Transparent colors to show parts of the background through the pixels</li>
+            <li>A completely redesigned color selector to handle the new capabilities</li>
+            <li>More!</li>
+          </ul>
+
+          <p>We hope everyone enjoys this update; A lot of work has been put into making it what we wanted it to be.  To celebrate the new release, we will be temporarily reducing the price of Pixelism to $1.49 (US), a 25% discount!</p>
+
+          <p>As always, please let us know what you think, either through <a href="support.php">E-mail</a> or on Twitter (@PixelismApp/@PhantomHat).  Also, send us your creations so we can show them off in our <a href="gallery.php">gallery</a>!</p>
+        </article>
+        <article>
+          <h1>Construction</h1>
+          <time datetime="2012-01-26 23:32:00" pubdate="pubdate">January 26, 2012 11:32pm</time>
+
+          <p>Hi, just announcing that we're starting work on the next version of Pixelism.  If you have any suggestions that you would like to see in Pixelism 2.0, <a href="support.php">let us know!</a></p>
+        </article>
+        <article>
+          <h1>Happy Thanksgiving!</h1>
+          <time datetime="2011-11-24 00:00:00" pubdate="pubdate">November 24, 2011 12:00am</time>
+
+          <p>Happy Thanksgiving to all of you!  We're thankful for all our users (even the non-Americans)!</p>
+
+          <p><img src="images/gallery/Turkey2.png" /></p>
+        </article>
+        <article>
+          <h1>Coming soon to a TouchPad near you!</h1>
+          <time datetime="2011-11-09 21:28:00" pubdate="pubdate">November 09, 2011 09:38pm</time>
+
+          <p>We made a &ldquo;movie&rdquo; poster for Pixelism!  It's modelled after old movie posters from the '30s and '40s.</p>
+
+          <p><img src="images/PixelismPoster.png" /></p>
+        </article>
+        <article>
+          <h1>Pixelism is available now!</h1>
+          <time datetime="2011-11-09 21:28:00" pubdate="pubdate">November 09, 2011 09:38pm</time>
+
+          <p>Pixelism and Pixelism Free are available now on the app catalog!  Go forth and create!</p>
+          <p><a href="http://developer.palm.com/appredirect/?packageid=com.phantomhat.pixelism">View Pixelism in the App Catalog</a></p>
+          <p><a href="http://developer.palm.com/appredirect/?packageid=com.phantomhat.pixelismfree">View Pixelism Free in the App Catalog</a></p>
+        </article>
+        <article>
+          <h1>Pixelism is almost ready!</h1>
+          <time datetime="2011-11-03 22:38:00" pubdate="pubdate">November 03, 2011 10:38pm</time>
+
+          <p>Pixelism is almost ready!  The app is complete, this website is (mostly) complete, and the only thing left to do is submit the app and wait for it to be approved.  So exciting!</p>
+        </article>
+-->
+        </div>
+        <div id="skinselectbox">
+          <span>Change skin:</span>
+          <select id="skinselect" onchange="switchSkin();">
+            <option value="v2skin" selected="selected">2.0 skin</option>
+            <option value="v1skin" >1.0 skin</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
